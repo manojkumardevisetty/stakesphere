@@ -1,0 +1,25 @@
+html body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+color-scheme: light ;
+overflow-x: hidden;
+-webkit-tap-highlight-color: transparent;
+}
+
+.box {
+    position: relative;
+  }
+  .box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 29px; 
+    padding: 1.85px; 
+    background:linear-gradient(180deg,rgba(0, 255, 224, 1),rgba(0, 71, 255, 0)); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude; 
+  }
