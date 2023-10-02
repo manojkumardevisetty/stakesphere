@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+.box {
+  position: relative;
+}
+.box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 29px; 
+  padding: 1.85px; 
+  background:linear-gradient(180deg,rgba(0, 255, 224, 1),rgba(0, 71, 255, 0)); 
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+/* Style for Start on Staking section */
+/* .startstake {
+  margin-top: 20px;
+}
+
+.startstake p {
+  font-weight: bold;
+}
+
+.startstake label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.startstake input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.startstake button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.startstake button:hover {
+  background-color: #219653;
+}
+
+.startstake p.message {
+  margin-top: 10px;
+  font-weight: bold;
+} */
